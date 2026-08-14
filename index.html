@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sistemas INOVALAB | IFSC</title>
+  <meta name="description" content="Catálogo de sistemas e serviços digitais do INOVALAB — IFSC Câmpus Florianópolis-Continente.">
+  <link rel="icon" href="./favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="https://rgbittencourt.github.io/inovalab-ifsc/" aria-label="Voltar ao site do INOVALAB">
+      <img src="./images/inovalab-logo-transparente.png" alt="INOVALAB · IFSC Câmpus Continente">
+      <span>SISTEMAS</span>
+    </a>
+    <a class="back" href="https://rgbittencourt.github.io/inovalab-ifsc/">← Site institucional</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow"><span></span> Catálogo digital · 13 serviços</p>
+      <h1>Sistemas <em>INOVALAB.</em></h1>
+      <p>Serviços, operação, inventário, reservas e gestão, organizados em um só lugar.</p>
+    </section>
+
+    <section class="catalog" aria-labelledby="catalog-title">
+      <h2 id="catalog-title" class="sr-only">Catálogo de sistemas</h2>
+      <div class="tools" aria-label="Filtros do catálogo">
+        <label>
+          <span>Buscar serviço</span>
+          <input id="search" type="search" placeholder="Digite um nome, função ou público…" autocomplete="off">
+        </label>
+        <div id="filters" class="filters" aria-label="Categorias"></div>
+      </div>
+      <p id="result-count" class="result-count" aria-live="polite"></p>
+      <div id="systems" class="systems-grid"></div>
+      <div id="empty" class="empty" hidden>Nenhum sistema corresponde aos filtros selecionados.</div>
+    </section>
+
+    <aside class="notice">
+      <strong>Acesso aos serviços</strong>
+      <p>Este catálogo é público. Cada sistema pode manter regras próprias de autenticação, autorização e disponibilidade.</p>
+    </aside>
+  </main>
+
+  <footer>
+    <span>INOVALAB · IFSC Câmpus Florianópolis-Continente</span>
+    <a href="mailto:inovalab.cte@ifsc.edu.br">inovalab.cte@ifsc.edu.br</a>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+</html>
